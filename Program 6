@@ -1,31 +1,14 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+
+int main() 
 {
-    int a,b;
-    char operator;
-    printf("Enter the two numbers:");
-    scanf("%d,%d",&a,&b);
-    printf("Enter the operator:");
-    scanf(" %c",&operator);
-    switch(operator)
-    {
-        case('+'):
-        printf("The addition of two numbers is:%d",a+b);
-        break;
-        case('-'):
-        printf("The substraction of two numbers is:%d",a-b);
-        break;
-        case('*'):
-        printf("The mutliplication of two numbers is:%d",a*b);
-        break;
-        case('/'):
-        printf("The Division of two numbers is:%d",a/b);
-        break;
-        case('%'):
-        printf("The modulo of two numbers is:%d",a%b);
-        break;
-        default:
-        printf("invalid");
-    }
-return 0;
+    int i=1;
+    while (i<11)
+        {
+        printf("%d\n", i);
+            i++;
+            
+            
+        }
+    return 0;
 }
