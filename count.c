@@ -6,7 +6,7 @@ int main()
     scanf("%d",&num);
     if(num<0)
     {
-        num=-num
+        num=-num;
     }
     while(num!=0)
     {
