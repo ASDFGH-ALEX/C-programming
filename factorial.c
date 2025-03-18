@@ -1,27 +1,22 @@
 #include<stdio.h>
+int factorial(int);
 int main()
 {
-int num,factorial;
-printf("Enter the number:");
-scanf("%d",&num);
-if(num>0)
-{
-   factorial=1;
-    while(num>0)
+   int num;
+   printf("Enter the number:");
+   scanf("%d",&num);
+   int fact;
+   fact=factorial(num);
+   printf("%d,is factorial\n",fact);
+   return 0;
+}
+int factorial(int num)
+  {
+    int i,fact=1;
+    for(i=1;i<=num;i++)
     {
-    factorial=factorial*num;
-    num=num-1;
+       fact=fact*i;
     }
-    printf("The factorial of the given number is %d/n",factorial);
-}
-else
-{
-  printf("Should be a positive number");
+  return fact;
 }
 
-
-return 0;
-}
-
-    
-    
